@@ -40,3 +40,4 @@ html, body { background: #0a0510; font-family: 'Cairo', sans-serif; color: #fff;
   background: linear-gradient(115deg, transparent, rgba(255,255,255,0.3), transparent);
   transform: skewX(-20deg); animation: shine 3s ease-in-out infinite; pointer-events: none;
 }
+// cache-bust Fri Aug 14 10:58:02 UTC 2026
