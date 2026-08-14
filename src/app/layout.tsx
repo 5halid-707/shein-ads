@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "خصم 50% على SHEIN | كوبون 53PP8N5 — الأطفال والرضع",
-  description: "لا تفوّت العروض الرائعة على شي إن! خصم يصل إلى 50% على الأطفال والرضع. ابحث عن 53PP8N5 في تطبيق SHEIN أو اضغط على الرابط للبدء!",
+  title: "كوبونات SHEIN | خصم 50% للأطفال + 80% للرجال — أكواد حصرية",
+  description: "لا تفوّت العروض الرائعة على شي إن! خصم 50% على الأطفال (53PP8N5) + خصم 80% على الرجال (2PE6FY4). ابحث عن الكود في تطبيق شي إن أو اضغط على الرابط!",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
