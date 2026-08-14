@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #0a0510; font-family: 'Cairo', sans-serif; color: #fff; overflow-x: hidden; }
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #f5d061 0%, #d4a017 50%, #f5d061 100%);
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+.text-gradient-pink {
+  background: linear-gradient(135deg, #ff6b9d 0%, #c4407a 50%, #ff6b9d 100%);
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+
+@keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+.animate-float { animation: float 4s ease-in-out infinite; }
+
+@keyframes pulse-glow {
+  0%,100% { box-shadow: 0 0 20px rgba(245,208,97,0.3), 0 0 40px rgba(245,208,97,0.1); }
+  50% { box-shadow: 0 0 40px rgba(245,208,97,0.5), 0 0 80px rgba(245,208,97,0.2); }
+}
+.animate-pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
+
+@keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+.shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+}
+
+.card-3d { transition: transform 0.4s cubic-bezier(0.2,0.8,0.2,1); }
+.card-3d:hover { transform: translateY(-8px) scale(1.02); }
+
+@keyframes shine { 0% { left: -150%; } 100% { left: 150%; } }
+.shine-effect::after {
+  content: ''; position: absolute; top: 0; left: -150%; width: 50%; height: 100%;
+  background: linear-gradient(115deg, transparent, rgba(255,255,255,0.3), transparent);
+  transform: skewX(-20deg); animation: shine 3s ease-in-out infinite; pointer-events: none;
+}
