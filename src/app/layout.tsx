@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "زيت الجسم السحري Besque | عرض خاص",
-  description: "زيت الجسم السحري من Besque — مرطب طبيعي بزيوت نباتية لبشرة نضرة ومشدودة",
+  title: "خصم 50% على SHEIN | كوبون 53PP8N5 — الأطفال والرضع",
+  description: "لا تفوّت العروض الرائعة على شي إن! خصم يصل إلى 50% على الأطفال والرضع. ابحث عن 53PP8N5 في تطبيق SHEIN أو اضغط على الرابط للبدء!",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
