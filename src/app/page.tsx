@@ -274,6 +274,49 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Promo Video Section */}
+      <section className="relative py-12 px-4 z-10">
+        <div className="max-w-2xl mx-auto">
+          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-6">
+            <h2 className="text-2xl sm:text-4xl font-extrabold mb-2" style={{ background: "linear-gradient(135deg, #FFEB3B, #FFFFFF)", WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent" }}>شاهد الفيديو الترويجي</h2>
+            <p className="text-white/70 text-sm">🔥 كل العروض في فيديو واحد — شاهد الآن!</p>
+          </motion.div>
+
+          {/* Video player with autoplay */}
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-white/30" style={{ boxShadow: "0 20px 60px rgba(0,0,0,0.3)" }}>
+            <video
+              src="/shein-coupons-video.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls
+              className="w-full h-auto"
+              style={{ aspectRatio: "9/16", maxHeight: "70vh" }}
+            />
+          </div>
+          <p className="text-center text-white/50 text-xs mt-3">👆 اضغط على الفيديو للتشغيل بالصوت</p>
+        </div>
+      </section>
+
+      {/* QR Code Section */}
+      <section className="relative py-12 px-4 z-10">
+        <div className="max-w-md mx-auto text-center">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+            <h2 className="text-xl sm:text-3xl font-extrabold mb-3" style={{ background: "linear-gradient(135deg, #FFEB3B, #FFFFFF)", WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent" }}>امسح وشارك</h2>
+            <p className="text-white/60 text-sm mb-6">وجّه كاميرا جوالك للوصول السريع لكل الكوبونات</p>
+            <div className="inline-block relative">
+              <div className="absolute inset-0 bg-yellow-300/20 blur-3xl rounded-full" />
+              <div className="relative bg-yellow-300 p-5 rounded-3xl shadow-2xl" style={{ boxShadow: "0 10px 40px rgba(255,235,59,0.3)" }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/qr-code.png" alt="باركود كوبونات SHEIN" className="w-44 h-44 sm:w-52 sm:h-52 mx-auto rounded-2xl" />
+              </div>
+            </div>
+            <p className="text-yellow-300 text-sm font-bold mt-4">shein-couponse.vercel.app</p>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="relative py-6 px-4 text-center z-10">
         <p className="text-white/50 text-xs">© 2026 صفحة كوبونات SHEIN • {COUPONS.length} كوبون نشط • العروض محدودة</p>
